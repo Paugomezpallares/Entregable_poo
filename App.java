@@ -16,8 +16,6 @@ public class App {
 
         System.out.println("\n");
         System.out.println("\n");
-        System.out.println("\n");
-        System.out.println("\n");
 
         DVD dvd=new DVD("MI DVD",250,80);
         System.out.println("Nombre del DVD: "+dvd.getNombre());

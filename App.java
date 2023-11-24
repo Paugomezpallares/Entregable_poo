@@ -1,16 +1,16 @@
 public class App {
     public static void main(String[] args) {
         CD cd=new CD("MI CD",250,80);
-        System.out.println("Nombre del CD: "+cd.getNombre());
-        System.out.println("La capacidad es: "+cd.getCapacidad());
+        System.out.println("The name of the CD: "+cd.getName());
+        System.out.println("The capacity is: "+cd.getCapacity());
 
-        cd.girar(30);
+        cd.play();
 
-        String[] arrayDatos=new String[5];
-        arrayDatos[0]=cd.almacenarDatosLaser("datos", arrayDatos);
-        arrayDatos[1]=cd.almacenarDatosLaser("datos2", arrayDatos);
+        String[] arrayInfoCD=new String[5];
+        arrayInfoCD[0]=cd.storeInformationDisc("data", arrayInfoCD);
+        arrayInfoCD[1]=cd.storeInformationDisc("data2", arrayInfoCD);
 
-        cd.leerInformacionDisco(arrayDatos);
+        cd.readInformationDisc(arrayInfoCD);
 
         System.out.println(cd.toString());
 
@@ -18,18 +18,31 @@ public class App {
         System.out.println("\n");
 
         DVD dvd=new DVD("MI DVD",250,80);
-        System.out.println("Nombre del DVD: "+dvd.getNombre());
-        System.out.println("La capacidad es: "+dvd.getCapacidad());
+        dvd.setSpeed(50);
+        System.out.println("Nombre del DVD: "+dvd.getName());
+        System.out.println("La capacidad es: "+dvd.getCapacity());
 
-        cd.girar(30);
+        cd.play();
 
-        String[] arrayDatosDVD=new String[5];
-        arrayDatosDVD[0]=cd.almacenarDatosLaser("datosDVD", arrayDatosDVD);
-        arrayDatosDVD[1]=cd.almacenarDatosLaser("datos2DVD", arrayDatos);
+        String[] arrayInfoDVD=new String[5];
+        arrayInfoDVD[0]=cd.storeInformationDisc("datosDVD", arrayInfoDVD);
+        arrayInfoDVD[1]=cd.storeInformationDisc("datos2DVD", arrayInfoDVD);
 
-        dvd.leerInformacionDisco(arrayDatosDVD);
+        dvd.readInformationDisc(arrayInfoDVD);
 
         System.out.println(dvd.toString());
+        System.out.println("\n");
+
+        Frisbee fris=new Frisbee("Fris");
+        fris.rotateDevice();
+        System.out.println("Is a: "+fris.getType());
+
+        System.out.println("\n");
+
+        Wheel wheel1=new Wheel("Wheel1");
+        wheel1.rotateDevice();
+        System.out.println("Is a: "+wheel1.getType());
+
         
     }
 }

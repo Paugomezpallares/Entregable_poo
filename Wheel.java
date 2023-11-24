@@ -1,4 +1,4 @@
-public class Frisbee implements RotateDevice,TypeOfDevice{
+public class Wheel implements RotateDevice,TypeOfDevice{
 
     private String name;
 
@@ -10,19 +10,18 @@ public class Frisbee implements RotateDevice,TypeOfDevice{
         this.name = name;
     }
 
-    public Frisbee(String name){
+    public Wheel(String name){
         this.name=name;
     }
-    public Frisbee(){}
 
+    public Wheel(){}
 
     @Override
     public void rotateDevice() {
-        System.out.println("Rotating the Frisbee");
+        System.out.println("Rotating the wheel");
     }
-
     @Override
     public String getType() {
-        return "Frisbee";
+        return "Wheel";
     }
 }

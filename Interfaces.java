@@ -1,13 +1,18 @@
-interface Giratorio{
-    void girar();
+interface ReadInformation {
+    void readInformationDisc(String[] a); 
 }
 
-interface Reproducir{
-    void reproducir();
+interface StoreInformation {
+    String storeInformationDisc(String datos,String[] a);   
 }
 
-/*public interface Interfaces {
-    void girar();
-    String almacenarDatosLaser(String datos,String[] a);
-    void leerInformacionDisco(String[] a);
-}*/
+interface PlayDisk {
+    void play();
+}
+
+interface RotateDevice{
+    void rotateDevice();
+}
+interface TypeOfDevice {
+    String getType();
+}

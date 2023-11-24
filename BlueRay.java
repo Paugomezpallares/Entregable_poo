@@ -1,12 +1,21 @@
-public class BlueRay extends DiscoBase implements Giratorio{
+public class BlueRay extends BaseDisk implements PlayDisk, TypeOfDevice,RotateDevice{
     
-    public BlueRay(String nombre, int capacidad, int velocidad){
-        super(nombre,capacidad);
+    public BlueRay(String name, int capacity, int speed){
+        super(name,capacity);
     }
 
     @Override
-    public void girar() {
-        System.out.println("El Disco de Vinilo: "+nombre+", está girando");    
+    public void play() {
+        System.out.println("Playing the BlueRay at speed: " + speed);
+    }
+    @Override
+    public void rotateDevice() {
+        System.out.println("Rotating the CD");
+    }
+
+    @Override
+    public String getType() {
+        return "BlueRay";
     }
 
      

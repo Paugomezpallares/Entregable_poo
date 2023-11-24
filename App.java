@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) {
-        CD cd=new CD("MI CD",250,80);
+        CD cd=new CD("My CD",250,80);
         System.out.println("The name of the CD: "+cd.getName());
         System.out.println("The capacity is: "+cd.getCapacity());
 
@@ -17,10 +17,10 @@ public class App {
         System.out.println("\n");
         System.out.println("\n");
 
-        DVD dvd=new DVD("MI DVD",250,80);
+        DVD dvd=new DVD("My DVD",250,80);
         dvd.setSpeed(50);
-        System.out.println("Nombre del DVD: "+dvd.getName());
-        System.out.println("La capacidad es: "+dvd.getCapacity());
+        System.out.println("Name of the DVD: "+dvd.getName());
+        System.out.println("The capacity is: "+dvd.getCapacity());
 
         cd.play();
 

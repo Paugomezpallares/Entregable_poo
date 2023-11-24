@@ -5,15 +5,15 @@ public class VinylRecord extends BaseDisk implements PlayDisk, TypeOfDevice,Rota
 
     @Override
     public void play() {
-        System.out.println("Playing the Vinilo at speed: " + speed);
+        System.out.println("Playing the vinyl at speed: " + speed);
     }
     @Override
     public String getType() {
-        return "BlueRay";
+        return "vinyl";
     }
 
     @Override
     public void rotateDevice() {
-        System.out.println("Rotating the Vinilo");
+        System.out.println("Rotating the vinyl");
     }
 }
